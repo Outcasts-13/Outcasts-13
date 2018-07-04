@@ -13,11 +13,11 @@
 	force = 40
 	wreckage = /obj/structure/mecha_wreckage/durand
 
-/obj/mecha/combat/t60/GrantActions(mob/living/user, human_occupant = 0)
+/obj/mecha/combat/advanced/GrantActions(mob/living/user, human_occupant = 0)
 	..()
 	defense_action.Grant(user, src)
 
-/obj/mecha/combat/t60/RemoveActions(mob/living/user, human_occupant = 0)
+/obj/mecha/combat/advanced/RemoveActions(mob/living/user, human_occupant = 0)
 	..()
 	defense_action.Remove(user)
 
