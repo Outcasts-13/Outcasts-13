@@ -1,7 +1,7 @@
 /obj/mecha/combat/t51
 	desc = "The most common power armour before the outbreak of the war."
-	name = "\improper Durand"
-	icon_state = "durand"
+	name = "\improper T51 Power Armour"
+	icon_state = "t51"
 	step_in = 4
 	dir_in = 1 //Facing North.
 	obj_integrity = 400
