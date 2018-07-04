@@ -1,6 +1,6 @@
 /obj/mecha/combat/t60
-	desc = "An advanced power armour created right as the bombs fell."
-	name = "\improper T60 Power Armour"
+	desc = "An advanced power armor created right as the bombs fell."
+	name = "\improper T60 Power Armor"
 	icon_state = "t60"
 	step_in = 4
 	dir_in = 1 //Facing North.
