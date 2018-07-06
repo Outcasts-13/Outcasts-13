@@ -1,7 +1,7 @@
-/obj/mecha/combat/superadvanced
-	desc = "Enclave Power Armor"
-	name = "\improper Super Advanced Power Armor"
-	icon_state = "superadvancedup"
+/obj/mecha/combat/shock
+	desc = "Enclave Shock Power Armor"
+	name = "\improper Shock Power Armor"
+	icon_state = "shocktrooperup"
 	step_in = 5
 	obj_integrity = 500
 	max_integrity = 500
@@ -16,15 +16,16 @@
 	max_equip = 4
 	bumpsmash = 1
 
-/obj/mecha/combat/superadvanced/GrantActions(mob/living/user, human_occupant = 0)
+
+/obj/mecha/combat/shock/GrantActions(mob/living/user, human_occupant = 0)
 	..()
 	defense_action.Grant(user, src)
 
-/obj/mecha/combat/superadvanced/RemoveActions(mob/living/user, human_occupant = 0)
+/obj/mecha/combat/shock/RemoveActions(mob/living/user, human_occupant = 0)
 	..()
 	defense_action.Remove(user)
 
-/obj/mecha/combat/superadvanced/loaded/New()
+/obj/mecha/combat/shock/loaded/New()
 	..()
 	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/weapon/energy/pulse(src)
 	ME.attach(src)

@@ -90,14 +90,16 @@
 	projectile = /obj/item/projectile/beam/laser/heavylaser
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
 
-/obj/item/mecha_parts/mecha_equipment/weapon/energy/ion
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/tri
 	equip_cooldown = 20
-	name = "\improper MKIV ion heavy cannon"
-	desc = "A weapon for combat exosuits. Shoots technology-disabling ion beams. Don't catch yourself in the blast!"
+	name = "\improper MKIV burst cannon"
+	desc = "A weapon for Power Armor. Shoots 3 beams. "
 	icon_state = "mecha_ion"
 	origin_tech = "materials=4;combat=5;magnets=4"
 	energy_drain = 120
-	projectile = /obj/item/projectile/ion
+	projectile = /obj/item/projectile/beam/laser
+	projectiles_per_shot = 3
+	variance = 6
 	fire_sound = 'sound/weapons/Laser.ogg'
 
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/pulse
